@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4437c9e3-cc92-480a-b765-a3e24bfd8978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec2.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state.tf" afterDir="false" />
-    </list>
+    <list default="true" id="4437c9e3-cc92-480a-b765-a3e24bfd8978" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +101,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -125,6 +121,19 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="jenkins_push" type="BashConfigurationType" factoryName="Bash">
+      <module name="jenkins_iac" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../gitpush.sh" />
+      <option name="PARAMETERS" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -135,12 +144,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587080660056</updated>
-      <workItem from="1587080661636" duration="441000" />
+      <workItem from="1587080661636" duration="636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441000" />
+    <option name="totallyTimeSpent" value="636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
