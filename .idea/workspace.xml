@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4437c9e3-cc92-480a-b765-a3e24bfd8978" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/install-jenkins.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/install-jenkins.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state.tf" beforeDir="false" afterPath="$PROJECT_DIR$/state.tf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/install-jenkins.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -79,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/state.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -97,13 +97,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/provider.tf" />
-        <option value="$PROJECT_DIR$/state.tf" />
         <option value="$PROJECT_DIR$/sg.tf" />
         <option value="$PROJECT_DIR$/scripts/admin-create.sh" />
         <option value="$PROJECT_DIR$/scripts/admin-create.groovy" />
         <option value="$PROJECT_DIR$/data.tf" />
         <option value="$PROJECT_DIR$/ec2.tf" />
         <option value="$PROJECT_DIR$/scripts/install-jenkins.sh" />
+        <option value="$PROJECT_DIR$/state.tf" />
       </list>
     </option>
   </component>
@@ -188,18 +188,18 @@
       <option name="presentableId" value="Default" />
       <updated>1587080660056</updated>
       <workItem from="1587080661636" duration="1625000" />
-      <workItem from="1587185433901" duration="2177000" />
+      <workItem from="1587185433901" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3802000" />
+    <option name="totallyTimeSpent" value="4114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22161172" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22161172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -208,7 +208,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,13 +234,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/state.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sg.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -288,6 +281,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/state.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
