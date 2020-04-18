@@ -13,7 +13,8 @@ rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 yum install jenkins
 
 echo 2.0 > /var/lib/jenkins/jenkins.install.UpgradeWizard.state
-cp -R /tmp/admin-create.groovy /var/lib/jenkins/init.groovy.d/basic-security.groovy
+mkdir -p /var/lib/jenkins/init.groovy.d
+cp  /tmp/admin-create.groovy /var/lib/jenkins/init.groovy.d/basic-security.groovy
 
 
 chown jenkins:jenkins /var/lib/jenkins -R
