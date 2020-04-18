@@ -1,12 +1,12 @@
 #!/bin/bash
 
-blkid /dev/nvme1n1
+blkid /dev/xvdh
 if [ $? -ne 0 ]; then
-      mkfs /dev/nvme1n1
+    mkfs.xfs /dev/xvdh
 fi
 
 mkdir  -p /var/lib/jenkins
-mount /dev/nvme1n1 /var/lib/jenkins
+mount /dev/xvdh /var/lib/jenkins
 
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
