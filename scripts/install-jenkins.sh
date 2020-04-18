@@ -10,7 +10,7 @@ mount /dev/xvdh /var/lib/jenkins
 
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
-yum install jenkins
+yum install jenkins -y
 
 echo 2.0 > /var/lib/jenkins/jenkins.install.UpgradeWizard.state
 mkdir -p /var/lib/jenkins/init.groovy.d
