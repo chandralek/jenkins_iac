@@ -14,7 +14,6 @@ resource "aws_volume_attachment" "ebs_att" {
 }
 
 resource "null_resource" "apply" {
-  count = 0
   connection {
     host      = aws_instance.jenkins.private_ip
     user      = "root"
