@@ -8,14 +8,26 @@ resource "aws_instance" "jenkins" {
 }
 
 resource "null_resource" "apply" {
+  connection {
+    host      = aws_instance.jenkins.private_ip
+    user      = "root"
+    password  = "DevOps321"
+    timeout   = "5m"
+  }
+  provisioner "file" {
+    source = "scripts/install-jenkins.sh"
+    destination = "/tmp/install-jenkins.sh"
+  }
+
+  provisioner "file" {
+    source = "scripts/admin-create.groovy"
+    destination = "/tmp/admin-create.groovy"
+  }
+
   provisioner "remote-exec" {
-    connection {
-      host      = aws_instance.jenkins.private_ip
-      user      = "root"
-      password  = "DevOps321"
-      timeout   = "5m"
-    }
+
     inline = [
-    "curl -s https://raw.githubusercontent.com/linuxautomations/labautomation/master/tools/docker-stack/install.sh| bash"]
+    "sh /tmp/install-jenkins.sh"
+    ]
   }
 }
