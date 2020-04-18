@@ -7,7 +7,14 @@ resource "aws_instance" "jenkins" {
   }
 }
 
+resource "aws_volume_attachment" "ebs_att" {
+  device_name = "/dev/sdh"
+  volume_id   = data.aws_ebs_volume.jenkins-volume.id
+  instance_id = aws_instance.jenkins.id
+}
+
 resource "null_resource" "apply" {
+  count = 0
   connection {
     host      = aws_instance.jenkins.private_ip
     user      = "root"
