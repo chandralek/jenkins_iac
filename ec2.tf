@@ -30,6 +30,11 @@ resource "null_resource" "apply" {
     destination = "/tmp/admin-create.groovy"
   }
 
+  provisioner "file" {
+    source = "scripts/plugins.groovy"
+    destination = "/tmp/admin-create.groovy"
+  }
+
   provisioner "remote-exec" {
 
     inline = [

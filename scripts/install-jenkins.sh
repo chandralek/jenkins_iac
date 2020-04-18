@@ -15,7 +15,7 @@ yum install jenkins
 echo 2.0 > /var/lib/jenkins/jenkins.install.UpgradeWizard.state
 mkdir -p /var/lib/jenkins/init.groovy.d
 cp  /tmp/admin-create.groovy /var/lib/jenkins/init.groovy.d/basic-security.groovy
-
+cp /tmp/plugins.groovy /var/lib/jenkins/init.groovy.d
 
 chown jenkins:jenkins /var/lib/jenkins -R
 
