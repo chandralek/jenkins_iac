@@ -1,6 +1,7 @@
 resource "aws_instance" "jenkins" {
   ami           = data.aws_ami.devops_image.id
   instance_type = "t2.micro"
+  iam_instance_profile  = "instance_role"
   vpc_security_group_ids = [aws_security_group.allow_jenkins.id]
   tags          = {
     Name        = "jenkins"
@@ -33,6 +34,11 @@ resource "null_resource" "apply" {
   provisioner "file" {
     source = "scripts/plugins.groovy"
     destination = "/tmp/plugins.groovy"
+  }
+
+  provisioner "file" {
+    source = "scripts/authorize.groovy"
+    destination = "/tmp/authorize.groovy"
   }
 
   provisioner "remote-exec" {
