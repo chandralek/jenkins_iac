@@ -25,3 +25,5 @@ chown jenkins:jenkins /var/lib/jenkins -R
 systemctl enable jenkins
 systemctl start jenkins
 
+echo /dev/xvdh /var/lib/jenkins xfs defaults 0 0 >>/etc/fstab
+
